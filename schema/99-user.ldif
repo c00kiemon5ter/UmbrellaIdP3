@@ -1,0 +1,22 @@
+dn: cn=schema
+objectClass: top
+objectClass: ldapSubentry
+objectClass: subschema
+cn: schema
+attributeTypes: ( 1.3.6.1.4.1.42750.1.1.1 NAME 'EAAHash' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications )
+attributeTypes: ( 1.3.6.1.4.1.42750.1.1.3 NAME 'EAAKey' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications )
+attributeTypes: ( 1.3.6.1.4.1.42750.1.1.2 NAME 'EAABirthdate' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications )
+attributeTypes: ( 1.3.6.1.4.1.42750.1.1.5 NAME 'EAAResetPwDate' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications )
+attributeTypes: ( 1.3.6.1.4.1.42750.1.1.4 NAME 'EAAResetPWUUID' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications )
+attributeTypes: ( 1.3.6.1.4.1.42750.2.3 NAME 'BridgeFederationUmbrellaUID' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications )
+attributeTypes: ( 1.3.6.1.4.1.42750.2.1 NAME 'BridgeFederationSrc' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications )
+attributeTypes: ( 1.3.6.1.4.1.42750.2.2 NAME 'BridgeFederationUID' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications )
+attributeTypes: ( 1.3.6.1.4.1.42750.2.5 NAME 'BridgeFederationUmbrellaUsername' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 USAGE userApplications )
+attributeTypes: ( 1.3.6.1.4.1.5923.1.1.1.16 NAME 'eduPersonOrcid' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 USAGE userApplications )
+objectClasses: ( 1.3.6.1.4.1.42750.1.1 NAME 'EAAUser' SUP top STRUCTURAL MUST ( objectClass $ uid $ userPassword $ EAABirthdate $ ou $ mail $ EAAHash $ EAAKey ) MAY ( EAAResetPwDate $ EAAResetPWUUID $ givenName $ homePhone $ homePostalAddress $ mobile $ sn $ postalAddress $ telephoneNumber $ emailAddress $ eduPersonOrcid) )
+objectClasses: ( 1.3.6.1.4.142750.2.4 NAME 'BridgeFederation' SUP top STRUCTURAL MUST ( objectClass $ uid $ BridgeFederationSrc $ BridgeFederationUID $ BridgeFederationUmbrellaUID $ ou $ BridgeFederationUmbrellaUsername ) )
+ds-sync-generation-id: 8408
+modifiersName: cn=Internal Client,cn=Root DNs,cn=config
+modifyTimestamp: 20130604160251Z
+ds-sync-state: 00000153cbab1a7347c400000002
+ds-sync-state: 00000153cbabfe6f41f600000002
