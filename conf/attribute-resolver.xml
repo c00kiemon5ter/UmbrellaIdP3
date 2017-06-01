@@ -162,7 +162,7 @@
 
 	</resolver:AttributeDefinition>
 
-	<resolver:DataConnector id="myLDAP" xsi:type="dc:LDAPDirectory" ldapURL="ldap://localhost" baseDN="ou=people,dc=umbrellaid,dc=org" principal="cn=admin" principalCredential="root">
+	<resolver:DataConnector id="myLDAP" xsi:type="dc:LDAPDirectory" ldapURL="ldap://localhost" baseDN="ou=people,dc=umbrellaid,dc=org" principal="cn=admin" principalCredential="******">
 
 
 
