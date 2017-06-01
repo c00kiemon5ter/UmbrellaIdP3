@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<!--
+        Strongly Typed by HTML5 UP
+        html5up.net | @n33co
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+<title>umbrellaID - The Federation for the Neutron and Photon
+	Community</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="/idp/assets/css/main.css" />
+<link rel="stylesheet" href="/idp/assets/css/jquery-ui.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+<script src="/idp/assets/js/jquery.js"></script>
+<script src="/idp/assets/js/jquery-ui.js"></script>
+
+<script>
+	$(function() {
+		$("#accordion").accordion({
+		 heightStyle: "content"
+		});
+	});
+</script>
+
+</head>
+<body class="homepage">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header" class="container">
+
+				<!-- Logo -->
+				<h1 id="logo">
+					<a href="/index.html"><img
+						src="/idp/images/umbrella-logo-head.jpg" alt="umbrellaID"
+						class="resizeimage" /></a>
+				</h1>
+				<p>umbrellaID: Confidentiality for a lifetime</p>
+				<!-- Nav -->
+				<nav id="nav">
+                                                                <ul>
+                                                                        <li>
+                                                                                <a href="https://umbrellaid.org/what.html" class="icon fa-info"><span>About umbrellaID</span></a>
+                                                                                <ul>
+                                                                                        <!-- <li><a href="#">Terms and Conditions</a></li> -->
+                                                                                        <li><a href="https://umbrellaid.org/what.html">What is umbrellaID?</a></li>
+                                                                                        <li><a href="https://umbrellaid.org/how.html">How can I use it?</a></li>
+                                                                                        <li><a href="https://umbrellaid.org/where.html">Where can I use it?</a></li>
+                                                                                </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                                <a class="icon fa-home" href="https://umbrellaid.org/sc.html"><span>About us</span></a>
+                                                                                <ul>
+                                                                                        <li><a href="https://umbrellaid.org/sc.html">Steering Committee</a></li>
+                                                                                        <li><a href="https://umbrellaid.org/tt.html">Technical Team</a></li>
+                                                                                        <li><a href="https://umbrellaid.org/partners.html">Partners</a></li>
+                                                                                        <li><a href="https://umbrellaid.org/legal.html">Legal Notice</a></li>
+                                                                                </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                                <a class="icon fa-industry" href="https://umbrellaid.org/where.html"><span>Services in operation</span></a>
+                                                                                <ul>
+                                                                                        <li><a href="https://useroffice.cells.es/Shibboleth.sso/Login?target=https://useroffice.cells.es/loginuser" target="_blank">ALBA</a></li>
+                                                                                        <li><a href="https://door.desy.de/Shibboleth.sso/Login" target="_blank">DESY</a></li>
+                                                                                        <li><a href="https://users3.elettra.trieste.it/shibboleth/vuo_login.cgi" target="_blank">ELETTRA</a></li>
+                                                                                        <li><a href="https://wwws.esrf.fr/Shibboleth.sso/Login?target=https://wwws.esrf.fr/misapps/SMISWebClient" target="_blank">ESRF</a></li>
+                                                                                        <li><a href="https://gate.hzdr.de/Shibboleth.sso/Login?SAMLDS=1&entityID=https://umbrellaid.org/idp/shibboleth" target="_blank">HZDR</a></li>
+                                                                                        <li><a href="https://auth.ill.eu/authsaml2/sso?entity_id=https://umbrellaid.org/idp/shibboleth&amp;next=https://clubng.ill.fr/cvng/signin" target="_blank">ILL</a></li>
+                                                                                        <li><a href="https://users.facilities.rl.ac.uk/Shibboleth.sso/Login" target="_blank">ISIS</a></li>
+                                                                                        <li><a href="https://duo.maxlab.lu.se/duo/umbrella.php" target="_blank">MAX IV</a></li>
+                                                                                        <li><a href="https://duo.psi.ch/duo/umbrella.php" target="_blank">PSI</a></li>
+											<li><a href="https://discrette.synchrotron-soleil.fr/sunset-link" target="_blank">SOLEIL</a></li>
+                                                                                        <li><a href="http://wayforlight.eu/Shibboleth.sso/Login" target="_blank">Wayforlight</a></li>
+                                                                                </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                                <a class="icon fa-lightbulb-o" href="http://wayforlight.eu/eng/home.aspx" target="_blank"><span>Lightsources</span></a>
+                                                                        </li>
+                                                                        <li>
+                                                                                <a class="icon fa-sign-in" href="https://umbrellaid.org/euu/login"><span>Login</span></a>
+                                                                        </li>
+                                                                </ul>
+
+				</nav>
+
+			</div>
+		</div>
+
+		<!-- Main -->
+		<div id="main-wrapper">
+			<div id="main" class="container">
+				<div class="row">
+
+					<!-- Content -->
+					<div id="content" class="8u 12u(mobile)">
+
+						<!-- Post -->
+						<div class="home">
+
+							<div id="features-wrapper">
+
+								<section id="features" class="container bg">
+									<div class="row">
+										<div id="content" class="8u 12u(mobile)">
+											<div class="loginpanel home bg">
+
+												<div id="accordion">
+													<h3>Umbrella Login</h3>
+													<div>
+
+														<form action="$flowExecutionUrl" method="post">
+
+															#parse("login-error.vm") 
+															#set ($serviceName = $rpUIContext.serviceName) 
+															#if ($serviceName && !$rpContext.getRelyingPartyId().contains($serviceName))
+															<legend> 
+															#springMessageText("idp.login.loginTo", "Login to") $encoder.encodeForHTML($serviceName) 
+															</legend>
+															#end
+
+															<div>
+																<label for="username">#springMessageText("idp.login.username","Username")</label> 
+																<input class="form-input" id="username"
+																	width="35px" name="j_username" type="text"
+																	placeholder="Username"
+																	value="#if($username)$encoder.encodeForHTML($username)#end">
+															</div>
+
+															<div>
+																<label for="password">#springMessageText("idp.login.password", "Password")</label> <input class="form-input" id="password"
+																	width="35px" name="j_password" type="password" value=""
+																	placeholder="Password">
+															</div>
+
+															<div>
+																<input type="checkbox" name="donotcache" value="1">
+																#springMessageText("idp.login.donotcache", "Don't Remember Login")
+															</div>
+
+															<div>
+																<input id="_shib_idp_revokeConsent" type="checkbox"
+																	name="_shib_idp_revokeConsent" value="true">
+																#springMessageText("idp.attribute-release.revoke", "Clear prior granting of permission for release of your information to this service.")
+															</div>
+
+															<div>
+																<button type="submit" name="_eventId_proceed">#springMessageText("idp.login.login", "Login")</button>
+															</div>
+															<div>
+																<a href="https://umbrellaid.org/euu/account/lostusername">Lost username</a>&nbsp;&nbsp;<a href="https://umbrellaid.org/euu/account/lostpassword">Lost password</a>
+															</div>
+														</form>
+
+														#* 
+														// 
+														// SP Description & Logo (optional) 
+														// These idpui lines will display added information (if available 
+														// in the metadata) about the Service Provider (SP) that requested 
+														// authentication. These idpui lines are "active" in this example 
+														// (not commented out) - this extra SP info will be displayed. 
+														// Remove or comment out these lines to stop the display of the 
+														// added SP information. 
+														// 
+														*# 
+														#set ($logo = $rpUIContext.getLogo())
+														#if ($logo) 
+														<img src="$encoder.encodeForHTMLAttribute($logo)"
+															alt="$encoder.encodeForHTMLAttribute($serviceName)">
+														#end 
+														#set ($desc = $rpUIContext.getServiceDescription())
+														#if ($desc) 
+															$encoder.encodeForHTML($desc) 
+														#end
+
+														<!-- </article> -->
+													</div>
+<!--
+													<h3>Log in via your Organisation</h3>
+													<div>
+														<div id="idpSelect"></div>
+														<script src="/idp/assets/js/idpselect_config.js"
+															type="text/javascript" language="javascript"></script>
+														<script src="/idp/assets/js/idpselect.js"
+															type="text/javascript" language="javascript"></script>
+													</div>
+-->
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<div id="footer" class="container">
+				<header>
+					<h2>
+						Questions or comments? <strong>Get in touch:</strong>
+					</h2>
+				</header>
+				<div class="row">
+					<div class="6u 12u(mobile)">
+						<section>
+							<form
+								Action="mailto:contact@umbrellaid.org?Subject=umbrellaid.org contact form"
+								METHOD="POST" ENCTYPE="text/plain" name="contact">
+								<div class="row 50%">
+									<div class="6u 12u(mobile)">
+										<input name="name" placeholder="Name" type="text" />
+									</div>
+									<div class="6u 12u(mobile)">
+										<input name="email" placeholder="Email" type="text" />
+									</div>
+								</div>
+								<div class="row 50%">
+									<div class="12u">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<div class="row 50%">
+									<div class="12u">
+										<a href="javascript:document.contact.submit()"
+											class="form-button-submit button icon fa-envelope">Send
+											Message</a>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+					<div class="6u 12u(mobile)">
+						<section>
+							<p>
+								Do you have any questions or comments?<br />Just fill out the
+								form and we’ll get back to you as soon as possible.
+							</p>
+							<div class="row">
+								<div class="6u 12u(mobile)">
+									<ul class="icons">
+										<li class="icon fa-home">umbrellaID<br /> c/o Björn Abt<br />
+											WHGA/U136<br /> 5232 Villigen PSI<br /> Switzerland
+										</li>
+										<li class="icon fa-envelope"><a href="#">contact@umbrellaid.org</a>
+										</li>
+									</ul>
+								</div>
+								<div class="6u 12u(mobile)">
+									<ul class="icons">
+									</ul>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div id="copyright" class="container">
+				<ul class="links">
+					<li>&copy; 2016 umbrellaID.</li>
+					<li><a href="legal.html">Legal Notice</a></li>
+                                        <li><a href="https://github.com/Umbrella-Commiters" target="_blank">Developer Information</a></li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="/idp/assets/js/jquery.dropotron.min.js"></script>
+	<script src="/idp/assets/js/skel.min.js"></script>
+	<script src="/idp/assets/js/skel-viewport.min.js"></script>
+	<script src="/idp/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="/idp/assets/js/main.js"></script>
+
+</body>
+</html>
+
