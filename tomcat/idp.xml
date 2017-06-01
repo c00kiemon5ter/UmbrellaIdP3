@@ -1,0 +1,1 @@
+<Context docBase="/opt/shibboleth-idp/war/idp.war" privileged="true" antiResourceLocking="true" unpackWAR="false" swallowOutput="true" />
