@@ -21,7 +21,7 @@ ldap {
 #	server = 'ldap.rrdns.example.org'
 
 	#  Port to connect on, defaults to 389, will be ignored for LDAP URIs.
-#	port = 389
+	port = 1389
 
 	#  Administrator account for searching and possibly modifying.
 	#  If using SASL + KRB5 these should be commented out.
