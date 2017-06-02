@@ -1,1 +1,1 @@
-<Context docBase="/opt/euu/euu.war" privileged="true" antiResourceLocking="true" unpackWAR="true" swallowOutput="false" />
+<Context docBase="/usr/local/src/UmbrellaFrontend-redesign/target/euu.war" privileged="true" antiResourceLocking="true" unpackWAR="true" swallowOutput="false" />
