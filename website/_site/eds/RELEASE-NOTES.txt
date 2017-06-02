@@ -1,0 +1,22 @@
+Changes in V1.0.2
+=============================================
+EDS-24 The embedded discovery service will fail to work with Internet Explorer when native XHR is disabled
+
+Changes in V1.0.1
+=============================================
+EDS-20 Kitting error prevents incremental search from working.
+
+Changes in V1.0
+=============================================
+The precise Cases changed are:
+
+EDS-10 The EDS should supportisPassive.
+EDS-8  Add option to hide IdPs in the EDS.
+EDS-12 Should take advantage of the <mdui:Keywords>.
+EDS-1 Globalization testing
+EDS-3 Mobile browsers
+EDS-16 Transfer Selection from typeahead to dropdown
+EDS-14 Return correct error for XMLHttpRequest Impaired browsers
+EDS-15 Not all FATAL errors in language bundles
+EDS-11 Some cosmetic suggestions
+

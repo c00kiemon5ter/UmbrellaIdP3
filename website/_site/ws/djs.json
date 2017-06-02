@@ -1,0 +1,15 @@
+{
+   "jobs" :[ 
+   {
+     "Status": "Created",
+     "Message": "",
+     "JobID": "12345678",
+     "JobType": "UpdateEAccount",
+     "Signature" : "-----BEGIN PGP SIGNATURE-----\n .....\n-----END PGP SIGNATURE-----",
+     "Attributes": 
+     {
+         "AccountName":"e17014",
+         "ResetPassword":"true"
+     }
+   }
+]}
